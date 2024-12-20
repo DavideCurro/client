@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('/public/sfondoviola.jpg'); /* Percorso relativo alla cartella public */
+  background-size: cover; /* Adatta l'immagine a tutto lo schermo */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Occupa tutta l'altezza dello schermo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.9); /* Blocco bianco con opacità */
+  padding: 30px; /* Spazio interno */
+  border-radius: 10px; /* Angoli arrotondati */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombra leggera */
+  text-align: center;
+  max-width: 400px; /* Larghezza massima */
+  width: 100%; /* Larghezza completa fino alla max-width */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #343a40; /* Colore scuro per il testo */
+  font-size: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spaziatura tra elementi */
+}
+
+.dropdown, .fetch-button {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Larghezza completa */
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.fetch-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+.game-info {
+  background-color: rgba(0, 0, 0, 0.8); /* Sfondo scuro semi-trasparente */
+  color: #fff; /* Testo bianco */
+  padding: 20px; /* Spazio interno */
+  border-radius: 10px; /* Angoli arrotondati */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombra */
+  margin-top: 20px; /* Spazio sopra */
+  max-width: 400px; /* Larghezza massima */
+  text-align: left; /* Testo allineato a sinistra */
+}
+
+.game-info h2 {
+  color: #ffffff; /* Titoli bianchi */
+  margin-bottom: 15px;
+}
+
+.game-info p {
+  margin: 5px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+
